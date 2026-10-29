@@ -1,6 +1,6 @@
 # Contributing to Distributed 3D Structural Surface Processing System (Surface)
 
-Welcome to the team! This repository establishes the clean integration baseline for the **Surface** 3D structural inspection project.
+Welcome to the team! This repository establishes the clean integration baseline on `main` for the **Surface** 3D structural inspection project.
 
 ---
 
@@ -29,7 +29,7 @@ The project pipeline is divided into clear modular boundaries:
                │
                ▼
 ┌───────────────────────────────┐
-│     Deep's Pipeline           │  Frontend Dashboard & API Orchestration
+│     Deep's Pipeline           │  Frontend Dashboard & Full-Stack Orchestration
 │ (React + Vite + Three.js,     │  - FastAPI backend endpoints & job manager
 │  WebGL PLY Viewer,            │  - Authentic status polling & artifact delivery
 │  Inspection Workflow)         │  - Tested baseline active
@@ -49,6 +49,8 @@ The project pipeline is divided into clear modular boundaries:
 
 ## 2. Git Workflow for Contributors
 
+The shared integration branch for all development is **`main`**.
+
 ### Step 1: Clone the Repository
 
 ```bash
@@ -56,23 +58,22 @@ git clone https://github.com/Deep084-bot/DesignProject-26.git
 cd DesignProject-26
 ```
 
-### Step 2: Switch to the Integration Baseline Branch
+### Step 2: Switch to the Main Integration Branch
 
 ```bash
-git switch chore/prepare-integration-baseline
-git pull origin chore/prepare-integration-baseline
+git switch main
+git pull origin main
 ```
-*(Once this baseline is merged into `main`, switch to `main` instead).*
 
 ### Step 3: Create a Dedicated Feature Branch
 
 Choose a descriptive branch name reflecting your ownership area:
 
-- **For Armaan:**
+- **For Armaan (stereo-to-point-cloud):**
   ```bash
   git switch -c feat/stereo-to-point-cloud
   ```
-- **For Satyam:**
+- **For Satyam (point-cloud-to-3D-model / surface analysis):**
   ```bash
   git switch -c feat/point-cloud-to-surface
   ```
@@ -118,10 +119,10 @@ Always verify that your changes do not break existing checks:
 npx oxlint && npm run build
 ```
 
-### Step 7: Push and Open a Pull Request
+### Step 7: Push and Open a Pull Request Targeting `main`
 
 ```bash
 git push -u origin <your-feature-branch>
 ```
 
-Then visit [https://github.com/Deep084-bot/DesignProject-26](https://github.com/Deep084-bot/DesignProject-26) to open a pull request targeting `chore/prepare-integration-baseline` (or `main` once merged). Provide a concise description of your changes, inputs, outputs, and test results.
+Then visit [https://github.com/Deep084-bot/DesignProject-26](https://github.com/Deep084-bot/DesignProject-26) to open a pull request targeting **`main`**. Provide a concise description of your changes, inputs, outputs, and test results. Deep will review, test, and merge the pull requests.
