@@ -46,7 +46,7 @@ $$\text{Upload stereo pair} \longrightarrow \text{Validate camera parameters} \l
 - **Deep (Frontend Dashboard & Full-Stack Orchestration)**:
   - React + Vite + Three.js viewer, FastAPI backend, job execution manager, and artifact delivery.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for full contribution guidelines, branch conventions, and step-by-step instructions.
+The shared integration branch for all development is **`main`**. Contributors should branch from `main` and open pull requests targeting `main`. See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines, branch conventions, and step-by-step instructions.
 
 ---
 
