@@ -29,7 +29,8 @@ The project pipeline is divided into clear modular boundaries:
                │
                ▼
 ┌───────────────────────────────┐
-│     Deep's Pipeline           │  Frontend Dashboard & Full-Stack Orchestration
+│     Deep and Bhavya's         |
+|         Pipeline              │  Frontend Dashboard & Full-Stack Orchestration
 │ (React + Vite + Three.js,     │  - FastAPI backend endpoints & job manager
 │  WebGL PLY Viewer,            │  - Authentic status polling & artifact delivery
 │  Inspection Workflow)         │  - Tested baseline active
